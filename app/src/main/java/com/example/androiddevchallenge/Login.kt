@@ -32,7 +32,8 @@ import com.example.androiddevchallenge.ui.theme.white
 import dev.chrisbanes.accompanist.insets.navigationBarsPadding
 
 @Composable
-fun Login(navController: NavController?, darkTheme: Boolean = isSystemInDarkTheme()) {
+fun Login(navController: NavController?) {
+    val darkTheme = isSystemInDarkTheme()
     val backgroundColor = if (darkTheme) gray900 else white
     Surface(color = backgroundColor) {
         Box(

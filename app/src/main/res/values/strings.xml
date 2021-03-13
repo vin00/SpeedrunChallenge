@@ -15,4 +15,12 @@
     <string name="welcome_back">Welcome back</string>
     <string name="email_address">Email address</string>
     <string name="password">Password</string>
+    <string name="account">ACCOUNT</string>
+    <string name="watchlist">WATCHLIST</string>
+    <string name="profile">PROFILE</string>
+    <string name="balance">Balance</string>
+    <string name="balance_amt">$73,589.01</string>
+    <string name="gain">+412.35 today</string>
+    <string name="transact">TRANSACT</string>
+    <string name="positions">Positions</string>
 </resources>
