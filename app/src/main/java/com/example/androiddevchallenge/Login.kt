@@ -1,11 +1,41 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.example.androiddevchallenge
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.paddingFromBaseline
+import androidx.compose.foundation.layout.requiredHeight
+import androidx.compose.foundation.layout.requiredSize
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.*
+import androidx.compose.material.Button
+import androidx.compose.material.ButtonDefaults
+import androidx.compose.material.Icon
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.OutlinedTextField
+import androidx.compose.material.Surface
+import androidx.compose.material.Text
+import androidx.compose.material.TextFieldDefaults
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Email
 import androidx.compose.material.icons.outlined.Password
@@ -48,8 +78,10 @@ fun Login(navController: NavController?) {
                     contentDescription = null,
                     contentScale = ContentScale.FillWidth
                 )
-                Column(modifier =
-                    Modifier.padding(top = 40.dp, start = 16.dp, end = 16.dp)) {
+                Column(
+                    modifier =
+                    Modifier.padding(top = 40.dp, start = 16.dp, end = 16.dp)
+                ) {
                     LoginInputField(Icons.Outlined.Email, R.string.email_address)
                     LoginInputField(Icons.Outlined.Password, R.string.password)
                     Button(
@@ -93,7 +125,7 @@ fun Login(navController: NavController?) {
 @Composable
 fun LoginInputField(icon: ImageVector, @StringRes placeholder: Int) {
     val darkTheme = isSystemInDarkTheme()
-    val textColor = if(darkTheme) white else gray900
+    val textColor = if (darkTheme) white else gray900
 
     // TODO : Fix label margin on the left, too large from the icon
     // Looks like it's a hidden field :(
