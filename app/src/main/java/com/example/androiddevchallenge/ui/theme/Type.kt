@@ -17,27 +17,78 @@ package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.androiddevchallenge.R
+
+val Montserrat = FontFamily(
+    Font(
+        R.font.montserrat_extrabold,
+        weight = FontWeight.ExtraBold,
+        style = FontStyle.Normal
+    ),
+    Font(
+        R.font.montserrat_bold,
+        weight = FontWeight.Bold,
+        style = FontStyle.Normal
+    ),
+    Font(
+        R.font.montserrat_semibold,
+        weight = FontWeight.SemiBold,
+        style = FontStyle.Normal
+    ),
+    Font(
+        R.font.montserrat_medium,
+        weight = FontWeight.Medium,
+        style = FontStyle.Normal
+    ),
+    Font(
+        R.font.montserrat_light,
+        weight = FontWeight.Light,
+        style = FontStyle.Normal
+    )
+)
 
 // Set of Material typography styles to start with
 val typography = Typography(
-    body1 = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
-    )
-        /* Other default text styles to override
-    button = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.W500,
-        fontSize = 14.sp
+    h1 = TextStyle(
+        fontFamily = Montserrat,
+        fontWeight = FontWeight.ExtraBold,
+        fontSize = 40.sp,
+        letterSpacing = 1.25.sp
     ),
-    caption = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Normal,
-        fontSize = 12.sp
-    )
-    */
+    h2 = TextStyle(
+        fontFamily = Montserrat,
+        fontWeight = FontWeight.ExtraBold,
+        fontSize = 36.sp,
+        letterSpacing = 0.sp
+    ),
+    h3 = TextStyle(
+        fontFamily = Montserrat,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 13.sp,
+        letterSpacing = 0.sp
+    ),
+    subtitle1 = TextStyle(
+        fontFamily = Montserrat,
+        fontWeight = FontWeight.Medium,
+        fontSize = 15.sp,
+        letterSpacing = 0.sp
+    ),
+    body1 = TextStyle(
+        fontFamily = Montserrat,
+        fontWeight = FontWeight.Light,
+        fontSize = 13.sp,
+        letterSpacing = 0.sp
+    ),
+    // Todo : Figure out how to use CAPS directly here
+    button = TextStyle(
+        fontFamily = Montserrat,
+        fontWeight = FontWeight.Bold,
+        fontSize = 13.sp,
+        letterSpacing = 1.25.sp,
+    ),
 )
