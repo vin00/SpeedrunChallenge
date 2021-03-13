@@ -88,7 +88,7 @@ fun Landing(navController: NavController?) {
 
 @Preview("Light Theme", widthDp = 360, heightDp = 640)
 @Composable
-fun LightPreview() {
+fun LightLandingPreview() {
     MyTheme {
         Landing(navController = null)
     }
@@ -96,9 +96,8 @@ fun LightPreview() {
 
 @Preview("Dark Theme", widthDp = 360, heightDp = 640)
 @Composable
-fun DarkPreview() {
+fun DarkLandingPreview() {
     MyTheme(darkTheme = true) {
         Landing(navController = null)
     }
-
 }

@@ -11,7 +11,7 @@ const val login = "login"
 const val home = "home"
 
 @Composable
-fun MyApp(startDestination: String = landing) {
+fun MyApp(startDestination: String = login) {
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = startDestination) {
         composable(landing) {
