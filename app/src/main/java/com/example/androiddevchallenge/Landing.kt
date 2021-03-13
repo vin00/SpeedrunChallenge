@@ -60,7 +60,7 @@ fun Landing(navController: NavController?) {
                         defaultElevation = 0.dp,
                         pressedElevation = 0.dp
                     ),
-                    onClick = { /*TODO*/ }
+                    onClick = { }
                 ) {
                     Text(text = stringResource(id = R.string.get_started))
                 }

@@ -84,7 +84,7 @@ val typography = Typography(
         fontSize = 13.sp,
         letterSpacing = 0.sp
     ),
-    // Todo : Figure out how to use CAPS directly here
+    // Couldn't figure out how to use caps in text style, resorted to adding capital strings
     button = TextStyle(
         fontFamily = Montserrat,
         fontWeight = FontWeight.Bold,

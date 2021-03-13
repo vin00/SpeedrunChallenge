@@ -72,6 +72,20 @@ fun Login(navController: NavController?) {
                     }
                 }
             }
+            Column(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text(
+                    text = stringResource(id = R.string.welcome_back),
+                    modifier = Modifier
+                        .width(200.dp)
+                        .paddingFromBaseline(top = 152.dp),
+                    style = MaterialTheme.typography.h2,
+                    textAlign = TextAlign.Center,
+                    color = Color.White
+                )
+            }
         }
     }
 }
@@ -82,6 +96,7 @@ fun LoginInputField(icon: ImageVector, @StringRes placeholder: Int) {
     val textColor = if(darkTheme) white else gray900
 
     // TODO : Fix label margin on the left, too large from the icon
+    // Looks like it's a hidden field :(
     var field: String by rememberSaveable { mutableStateOf("") }
     OutlinedTextField(
         value = field,
