@@ -6,17 +6,23 @@
 
 
 ## :scroll: Description
-<!--- Describe your app in one or two sentences -->
+WeTrade application for AndroidDevChallenge. Implementation of provided mockup.
 
 
 ## :bulb: Motivation and Context
-<!--- Optionally point readers to interesting parts of your submission. -->
-<!--- What are you especially proud of? -->
+Interesting bits
+- Positioning of `Welcome Back` on the `Login` page
+- Absolute positoning of the stock ticker symbol on the `Home - Positions` page
 
 
 ## :camera_flash: Screenshots
-<!-- You can add more screenshots here if you like -->
-<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
+### Light Theme
+<img src="/results/light_welcome.png" width="260">&emsp;<img src="/results/light_login.png" width="260">
+<img src="/results/light_home.png" width="260">&emsp;<img src="/results/light_positions.png" width="260">
+
+### Dark Theme
+<img src="/results/dark_welcome.png" width="260">&emsp;<img src="/results/dark_login.png" width="260">
+<img src="/results/dark_home.png" width="260">&emsp;<img src="/results/dark_positions.png" width="260">
 
 ## License
 ```
